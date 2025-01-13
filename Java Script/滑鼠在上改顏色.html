@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS邊框</title>
+    <style>
+      #msg{
+         display: inline-block;
+      }
+    </style>
+</head>
+<body>
+    <h1 id="msg" onmouseover="change()" onmouseout="restore()">你好,歡迎光臨!</h1>
+    <script>
+    function change(){
+        var msg = document.getElementById('msg');
+        msg.style.color = 'white';
+        msg.style.backgroundColor = 'red';
+}
+    function restore(){
+        var msg = document.getElementById('msg');
+        msg.style.color = '';
+        msg.style.backgroundColor = '';
+}
+
+ </script>
+</body>
+</html> 

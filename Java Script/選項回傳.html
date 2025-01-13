@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS邊框</title>
+</head>
+<body>
+    <form>
+      喜歡的甜點:
+      <input type="checkbox" name="sank" value="馬卡龍">馬卡龍
+      <input type="checkbox" name="sank" value="舒芙雷">舒芙雷
+      <input type="checkbox" name="sank" value="蘋果派">蘋果派
+      <input type="checkbox" name="sank" value="水果塔">水果塔<br>
+      <input type="submit" onclick="showResult()" value="提交">
+      <input type="reset" value="重設">
+    </form>
+    <script>
+    function showResult(){
+        var result = [];
+        var sank = document.getElementsByName('sank');
+    for(var i = 0; i < sank.length; i++){
+        if(sank[i].checked){
+            result.push(sank[i].value);
+        }
+    }
+    window.alert(result);
+}
+   </script>
+</body>
+</html> 

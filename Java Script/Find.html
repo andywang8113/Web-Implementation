@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Java script賦值運算子</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <h1>用filter來過濾資料</h1>
+  <script>
+    var arr = [191,264,187,264,456];
+    let found = arr.find(function(number){
+    return number === 264
+    })
+    console.log(found)
+    let filterFound = arr.filter(function(number){
+    return number === 264
+    })
+    console.log("filterFound:",filterFound )
+  </script>
+     
+<!-- <script src="./script.js"></script> -->
+</body>
+   </html> 
+
+
+<!-- 用find
+var arr = [191,264,187,264,456];
+let found = arr.find(function(number){
+    return number === 264
+    })
+console.log(found);
+
+用filterFound
+let filterFound = arr.filter(function(number){
+    return number === 264
+    })
+console.log("filterFound:",filterFound );
+  
+會抓出重複的 -->

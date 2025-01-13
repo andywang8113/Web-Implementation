@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>顯示文字</title>
+    <style>
+        h1{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world.html</h1>
+    <script>
+       let food = parseInt( prompt("這餐會花多少錢"))
+       let tipPercentage = parseInt( prompt("小費幾趴?")) /100
+       let tipAmount = food * tipPercentage
+       let total = food + tipAmount
+       console.log("小費金額:" + tipAmount)
+       console.log("總金額:" + total)
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="abc" src="./圖片和影片/girl1.png" width="200">
+    <script>
+        var abc = document.getElementById('abc');
+        abc.addEventListener('mouseover', showabc, false);
+        abc.addEventListener('mouseout', showdef, false);
+function showabc(){
+    abc.src = 'image/girl2.png';
+}
+function showdef(){
+    abc.src = 'image/girl1.png';
+}
+   </script>
+</body>
+</html>
+

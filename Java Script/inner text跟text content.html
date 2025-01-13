@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS邊框</title>
+</head>
+<body>
+    <p id="source">
+      <style>#text{text-transform: uppercase;}</style>
+      <span id="text">See<br>how this text<br>is interpreted.</span>
+      <span style="display: none;">HIDDEN TEXT</span>
+    </p>
+    <h3>textContent屬性的結果:</h3>
+    <textarea id="textContentOutput" rows="6" cols="70"></textarea>
+    <h3>innerText屬性的結果:</h3>
+    <textarea id="innerTextOutput" rows="6" cols="70"></textarea>
+    <script>
+        var source = document.getElementById('source');
+        var textContentOutput = document.getElementById('textContentOutput');
+        var innerTextOutput = document.getElementById('innerTextOutput');
+        textContentOutput.value = source.textContent;
+        innerTextOutput.value = source.innerText;
+    </script>
+</body>
+</html> 

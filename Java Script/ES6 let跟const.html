@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Java script賦值運算子</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <h1>let跟const</h1>
+  <script>
+   //1.作用域的改變
+   //2.var => function
+   //3.let const => {};
+   //ex1 for迴圈
+  //  let i = 0;
+  //  for(let i = 0; i < 10 ; i++){
+  //     console.log("迴圈跑第" + i + "次");
+  //  }  //裡面的i汙染到外面的i
+  //  console.log(i)
+  //ex2 if else
+  // var x = 1;
+  // if(x === 1){
+  //   let x = 5; //用var的話會被汙染到
+  // }else{
+  //   let x = 10;
+  // }
+  // console.log(x);
+  //ex3 IIFE 立即函式
+  (function(){
+   var x = 1;
+  })(jQuery);
+  {
+    let x = 1;
+  }
+  // chrome 支援ES6
+  // 用babel 把ES6 => ES5
+ </script>
+<!-- <script src="./script.js"></script> -->
+</body>
+   </html>  

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock"></div>
+    <button type="button" id="btn">停止線上時鐘</button>
+    <script>
+    window.addEventListener('load', function(){
+    var timer = window.setInterval(function(){
+        var clock = document.getElementById('clock');
+        clock.textContent = (new Date()).toLocaleString();
+    }, 1000);
+        var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(){
+        window.clearInterval(timer);
+    },false)
+},false)
+
+    </script>
+</body>
+</html>
+
+

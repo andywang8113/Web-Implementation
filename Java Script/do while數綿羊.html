@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Java script賦值運算子</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h1>第一種迴圈for(1),用for迴圈到著數綿羊,直到睡著</h1>
+    <script>
+       do {
+        x++;
+        console.log('第' + x + '隻綿羊');
+       }while(x < 10)
+    </script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>
+
+<!--do whle迴圈跟while迴圈差在哪
+我們設x值為10 
+終止條件用x < 10
+利用while迴圈來跑不會輸出結果,因為10不小於10
+下面用do while迴圈來執行
+do {
+     x++;
+     console.log('第' + x + '隻綿羊');
+   }while(x < 10)
+他的輸出結果會是11,為甚麼呢?終止條件不是 x < 10嗎?
+他輸出11的原因是,他的終止條件在程式的最下面,他上面
+有個do迴圈,裡面有個10+1然後輸出結果就會是11,這迴圈
+是先跑完上面再跑到下面。-->
+

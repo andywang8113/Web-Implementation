@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="URL">選擇網站:</label>
+        <select id="URL" size="1">
+            <option value="https://www.youtube.com/">youtube</option>
+            <option value="https://ani.gamer.com.tw/">動畫瘋</option>
+            <option value="https://www.lhu.edu.tw/">龍華</option>
+        </select>
+    </form>
+    <script>
+        var URL = document.getElementById('URL');
+        URL.addEventListener('change', function(){
+        newWin = open();
+        newWin.location.href = URL.value;
+},false)
+  </script>
+</body>
+</html>

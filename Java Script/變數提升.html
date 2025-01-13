@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Java script賦值運算子</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <h1>變數提升</h1>
+  <script>
+    console.log(x);
+    var x =10;
+    console.log(x);
+    function sayHello(){
+      console.log(x);
+      var x = 20;
+      console.log(x);
+    }
+    sayHello()  
+  </script>
+     
+<!-- <script src="./script.js"></script> -->
+</body>
+   </html>  

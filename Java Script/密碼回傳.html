@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS邊框</title>
+</head>
+<body>
+    <form>
+      <label for="userName">帳號:</label>
+      <input type="text" id="userName" size="20"><br>
+      <label for="userPWD">密碼:</label>
+      <input type="password" id="userPWD" size="20"><br>
+      <input type="submit" value="提交" onclick="showResult()">
+      <input type="reset" value="重設">
+    </form>
+    <script>
+        function showResult(){
+            var userName = document.getElementById('userName');
+            var userPWD = document.getElementById('userPWD');
+            window.alert(userName.value + '\n' + userPWD.value);
+}
+    </script>
+</body>
+</html> 

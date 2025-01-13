@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <form id="myform">
+        <label for="username">姓名:</label>
+        <input type="text" id="username">
+        <input type="submit" value="送出">
+    </form>
+    <script>
+    var myform = document.getElementById('myform');
+myform.addEventListener('submit', function(e){
+    if (!window.confirm('確認提交表單?'))
+      e.preventDefault();
+},false);
+   </script>
+</body>
+</html>
+
