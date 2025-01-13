@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手機表單</title>
+    <style>
+        .textarea{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>行動電話使用意見</h1>
+    <form>
+        <p>姓&nbsp;&nbsp;&nbsp;名<input type="text" name="username" size="40"></p>
+        <p>E-mail<input type="text" name="usermail" value="andywang8113@gmail.com" size="40"></p>
+        <p>年&nbsp;&nbsp;&nbsp;齡:
+            <input type="radio" name="userAge" value="age1">未滿20歲
+            <input type="radio" name="userAge" value="age2">20~29
+            <input type="radio" name="userAge" value="age3">30~39
+            <input type="radio" name="userAge" value="age3">40歲以上
+        </p>
+        <p>你使用過那些廠牌的手機</p>
+            <input type="checkbox" name="userPhone[]" value="htc">htc
+            <input type="checkbox" name="userPhone[]" value="Apple">Apple
+            <input type="checkbox" name="userPhone[]" value="Asus">Asus
+        <p>你使用手機最常碰到那些問題?<br>
+            <textarea name="userTrouble" col="45" row="4">
+         </textarea>
+        </p>
+        <p>你使用過哪家電信業者的門號
+            <select name="userNumber[]" size="4" multiple>
+                <option value="中華電信">中華電信</option>
+                <option value="台灣大哥大">台灣大哥大</option>
+                <option value="遠傳之星">遠傳之星</option>
+                <option value="台灣之星">台灣之星</option>
+            </select>
+        </p>
+        <input type="submit" value="提交">
+        <input type="reset" value="重設">
+    </form>
+    <!-- <script src="./jdcript.js"></script> -->
+</body>
+</html>
+
