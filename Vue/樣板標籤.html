@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc"><p>{{ msg }}初體驗!</P></div>
+        <script>
+            Vue.createApp({
+                data(){
+                    return{
+                        msg : "Hello!"
+                    }
+                }
+            }).mount("#abc")
+        </script>
+    </body>
+    </html>
+
+
+<!-- <p v-text="msg">msg會被當作純文字顯示出來
+<div id="abc"><p v-text="msg">初體驗!</P></div>
+
+<p v-pre>略過樣板顯示
+<div id="abc"><p v-pre>{{ msg }}初體驗!</P></div> -->

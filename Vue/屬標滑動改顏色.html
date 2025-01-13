@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數字加總</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <style>
+        .class1{
+            color: blue;
+            background-color: #fff;
+        }
+        .class2{
+            color: azure;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="abc">
+        <h1 v-bind:class="{'class1': bcd, 'class2' : cdf}"@mouseover="change" @mouseout="restore">Hello,王顥勳</h1>
+    </div>
+    <script>
+        Vue.createApp({
+          data(){
+            return{
+              bcd: true,
+              cdf: false
+            }
+        },
+        methods:{
+          change() {
+              this.bcd= false;
+              this.cdf= true;
+            },
+          restore() {
+              this.bcd= true;
+              this.cdf= false;
+            }
+        }
+   }).mount("#abc")
+
+    </script>
+</body>
+</html>

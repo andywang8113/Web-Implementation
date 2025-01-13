@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc"><button :disabled="btn">按鈕</button></div>
+        <div id="bcd"><button :disaled="btn1">按鈕1</button></div>
+        <script>
+            Vue.createApp({
+              data(){
+                return{
+                   btn: "ture"
+            }
+        }
+    }).mount("#abc")
+            Vue.createApp({
+              data(){
+               return{
+                   btn1: "false"
+            }
+        }  
+    }).mount("#bcd")
+        </script>
+    </body>
+    </html>

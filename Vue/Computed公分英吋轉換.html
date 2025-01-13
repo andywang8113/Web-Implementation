@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+            <P>公分:<input type="text" v-model="cm"></P>
+            <p>英寸:<input type="text" v-model="inch"></p>
+        </div>
+        <script>
+            Vue.createApp({
+             data(){
+              return{
+                cm: 2.54
+            }
+        },
+            computed:{
+             inch:{
+              get(){
+                return Number.parseFloat(Number(this.cm) / 2.54).toFixed(2);
+            },
+              set(val){
+                this.cm = Number.parseFloat(Number(val) * 2.54).toFixed(2);
+            }
+        }
+    }
+   }).mount("#abc");
+</script>
+    </body>
+    </html>

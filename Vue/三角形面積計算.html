@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+            <p>底:{{ base }}</p>
+            <p>高:{{ height}}</p>
+            <p>三角形面積: {{ ( base * height ) / 2 }}</p>
+        </div>
+        <script>
+            Vue.createApp({
+               data(){
+                return{
+                  base: 25,
+                  height: 10
+            }
+        }
+    }).mount("#abc")
+
+        </script>
+    </body>
+    </html>

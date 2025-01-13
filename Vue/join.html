@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">{{ bcd.join("&&") }}</div>
+        <script>
+            Vue.createApp({
+              data(){
+               return{
+                 bcd: ['龍華科技大學', '資網三B', 'D1114182023', '王顥勳']
+            }
+        }
+    }).mount("#abc")
+        </script>
+    </body>
+    </html>

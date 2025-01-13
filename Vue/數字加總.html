@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數字加總</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="abc">
+        <p>數字1:<input type="text" v-model.number="num1"></p>
+        <p>數字2:<input type="text" v-model.number="num2"></p>
+        <p>數字3:<input type="text" v-model.number="num3"></p>
+        <p>數字1+數字2-數字3:{{ num1 + num2 - num3 }}</p>
+    </div>
+    <script>
+        Vue.createApp({
+           data(){
+             return{
+               num1: 0,
+               num2: 0,
+               num3: 0
+            }
+        }
+    }).mount("#abc")
+</script>
+</body>
+</html>

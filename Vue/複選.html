@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公分轉英吋</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+           <P>興趣(可複選):{{ interest }}</P>
+           <input type="checkbox" id="item1" value="打球" v-model="interest">
+           <label for="item1">打球</label>
+           <input type="checkbox" id="item2" value="跑步" v-model="interest">
+           <label for="item2">跑步</label>
+           <input type="checkbox" id="item3" value="騎車" v-model="interest">
+           <label for="item3">騎車</label>
+           <input type="checkbox" id="item4" value="玩遊戲" v-model="interest">
+           <label for="item4">玩遊戲</label>
+        </div>
+        <script>
+            Vue.createApp({
+              data(){
+                return{
+                  interest: []
+            }
+       }
+   }).mount("#abc")
+</script>
+    </body>
+    </html>

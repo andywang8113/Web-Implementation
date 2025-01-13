@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公分轉英吋</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+           <P>身高(cm):<input type="text" v-model="height"></P>
+           <P>體重(kg):<input type="text" v-model="weight"></P>
+           <button @click="abcBMI">計算BMI</button>
+           <P>BMI:{{ BMI }}</P>
+        </div>
+        <script>
+            Vue.createApp({
+              data(){
+                return{
+                  height: 0,
+                  weight: 0,
+                  BMI: 0
+            }
+        },
+            methods:{
+              abcBMI(){
+                  this.BMI = (this.weight / (this.height / 100)**2).toFixed(2);
+            }
+        }
+    }).mount("#abc");
+
+        </script>
+    </body>
+    </html>

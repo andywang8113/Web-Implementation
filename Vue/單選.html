@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公分轉英吋</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+           <P>已婚: {{ bcd }}</P>
+           <input type="radio" id="yes" value="是" v-model="bcd">
+           <label for="yes">是</label>
+           <input type="radio" id="no" value="否" v-model="bcd">
+           <label for="no">否</label>
+        </div>
+        <script>
+            Vue.createApp({
+               data(){
+                 return{
+                   bcd : ''
+            }
+        }
+    }).mount("#abc")
+
+        </script>
+    </body>
+    </html>

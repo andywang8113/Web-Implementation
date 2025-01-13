@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公分轉英吋</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+            <input type="text" v-model.trim="msg">
+            <p>輸入訊息如下:<br>{{ msg }}</p>
+        </div>
+        <script>
+            Vue.createApp({
+              data(){
+                return{
+                   msg : ''
+            }
+        }
+    }).mount("#abc");
+
+        </script>
+    </body>
+    </html>
+
+
+<!-- v-model.lazy
+等使用者輸入完資料按enter才會顯示資料
+
+v-model.trim
+去掉前後的空白字元
+
+v-model.number
+使用者在文字方塊內輸入訊息都會被當作是字串,加number會被認為是數字 -->

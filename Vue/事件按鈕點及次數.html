@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公分轉英吋</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc"><button v-on:click="cout++">點按次數: {{ cout }}</button></div>
+        <script>
+            Vue.createApp({
+               data(){
+                 return{
+                   cout : 1
+            }
+        }
+    }).mount("#abc");
+        </script>
+    </body>
+    </html>

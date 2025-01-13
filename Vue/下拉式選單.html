@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公分轉英吋</title>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <div id="abc">
+           <p>最高學歷: {{ bcd }}</p>
+           <select v-model="bcd">
+            <option disabled value="">請選擇一個</option>
+            <option>碩士或以上</option>
+            <option>大專</option>
+            <option>高中</option>
+            <option>國中</option>
+           </select>
+        </div>
+        <script>
+            Vue.createApp({
+               data(){
+                 return{
+                   bcd: ''
+                }
+            }
+    }).mount("#abc")
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3"></script>
+        <style>
+            #abc, #bcd{
+                display: inline-block;
+                border: 10px solid lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="abc"><img v-bind="photo"></div>
+        <div id="bcd"><img v-bind="photo1"></div>
+        <script>
+            Vue.createApp({
+              data(){
+               return{
+                 photo:{
+                   src: "圖片和影片/girl2.png",
+                   width: '300'
+            }
+        }
+    }
+}).mount("#abc");
+            Vue.createApp({
+               data(){
+                return{
+                 photo1:{
+                   src: "圖片和影片/girl1.png",
+                   width: '300'
+            }
+        }
+    }
+}).mount("#bcd")
+
+        </script>
+    </body>
+    </html>
