@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="a.html">連結1</a></li>
+        <li><a href="b.html">連結2</a></li>
+        <li><a href="c.html">連結3</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script>
+        $("li").each(function(index, element){
+           window.alert($(this).text()); 
+      })
+
+    </script>
+</body>
+</html>

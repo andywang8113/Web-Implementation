@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>項目1</li>
+        <li>項目2
+            <ul>
+                <li>項目1a</li>
+                <li>項目2b</li>
+            </ul>
+        <li>項目1</li>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script>
+        $("li").has("ul").css("color", "red");
+    </script>
+</body>
+</html>
+
+<!-- has將目前選擇的元素篩選符合的子孫元素 -->
