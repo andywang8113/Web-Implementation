@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS邊框</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        body{
+            background-color: gray;
+        }
+        .cnt{
+            width: 70%;
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+        }
+        h1{
+            margin: 20px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: 1px solid #cccccc;
+        }
+        th, td{
+            padding:10px;
+            text-align: left;
+        }
+        th{
+            background-color: aquamarine;
+        }
+        button[type="submit"]{
+            display: block;
+            cursor: pointer;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #6020ba;
+            color:#ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+        button[type="submit"]:hover{
+            background-color: #c72020;
+        }
+    </style>
+</head>
+<body>
+    <div class="cnt">
+        <h1>註冊表單</h1>
+        <form action="#" method="post">
+          <table>
+            <tr>
+                <th><label for="name">姓名</label></th>
+                <td><input type="text" id="name" name="name" size="40" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">電子郵件</label></th>
+                <td><input type="email" id="email" name="email" size="40" required></td>
+            </tr>
+            <tr>
+                <th><label>性別</label></th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">    <!--  male代表男性  gender代表性別 -->
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="female"> <!--female代表女性-->
+                    <label for="female">女</label>
+                </td>
+            </tr>
+        </table>
+                <button type="submit">送出</button>
+        </form>
+    </div>
+</body>
+</html> 

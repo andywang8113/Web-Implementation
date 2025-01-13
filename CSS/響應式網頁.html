@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="圖庫,相片,影片">
+    <meta name="description" content="高品質圖庫,相片,影片,免費使用">
+    <title>Photos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width:100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        header, nav, main, footer{
+            display: block;
+            width: 96%;
+            margin: 0 auto;
+        }
+        header{
+            color:aliceblue;
+            background-color: lightseagreen;
+        }
+        nav > ul{
+            display: flex;
+            margin-top: 20px;
+        }
+        nav > ul > li{
+            width:75px;
+            margin-right: 10px;
+            padding: 10px;
+            list-style: none;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        nav > ul > li > a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color:black;
+        }
+        hr{
+            border-top: 1px solod lightcoral;
+            margin: 50px 0 20px;
+        }
+        #title1{
+            margin: 10px;
+            padding: 10px;
+        }
+        #title2{
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+        .gridcontainer{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+        .img-photo {
+            width: 100%; /* 使圖片佔滿容器 */
+            height: 200px; /* 固定高度 */
+            object-fit: cover; /* 確保圖片不變形並填滿容器 */
+            border-radius: 5px; /* 可選圓角 */
+}
+        .a-detail{
+            text-decoration: none;
+            color:#0066ff;
+            font-weight: bold;
+        }
+        .a-about{
+            text-decoration: none;
+            color: #000000;
+            padding: 20px 0;
+        }
+        .a-back{
+            float: right;
+            text-decoration: none;
+            color: rgb(27, 24, 173);
+            font-family: Arial;
+            margin: 10px;
+        }
+        @media screen and (min-width: 769px){
+            .gridcontainer{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/png" size="64x64" href="./圖片和影片/heart.png">
+</head>
+<body>
+    <header>
+        <h1 id="title1">CarPhotos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">相片</a></li>
+            <li><a href="#">影片</a></li>
+            <li><a href="#">使用者</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="title2">年度車款精選</h2>
+        <div class="gridcontainer">
+          <div class="griditem">
+            <img src="./圖片和影片/3.jpg" class="img-photo">
+            <h3>audi a3</h3>
+            <p><a href="photo1.jpg" class="a-detail">詳細資料&raquo;</a></p>
+          </div>
+          <div class="griditem">
+            <img src="./圖片和影片/cx30.jpg" class="img-photo">
+            <h3>mazda cx30</h3>
+            <p><a href="photo2.jpg" class="a-detail">詳細資料&raquo;</a></p>
+          </div>
+          <div class="griditem">
+            <img src="./圖片和影片/6.jpg" class="img-photo">
+            <h3>BMW X6</h3>
+            <p><a href="photo3.jpg" class="a-detail">詳細資料&raquo;</a></p>
+          </div>
+          <div class="griditem">
+            <img src="./圖片和影片/focous.jpg" class="img-photo">
+            <h3>Ford focous</h3>
+            <p><a href="photo4.jpg" class="a-detail">詳細資料&raquo;</a></p>
+          </div>
+          <div class="griditem">
+            <img src="./圖片和影片/hs.jpg" class="img-photo">
+            <h3>MG HS</h3>
+            <p><a href="photo5.jpg" class="a-detail">詳細資料&raquo;</a></p>
+          </div>
+          <div class="griditem">
+            <img src="./圖片和影片/zs" class="img-photo">
+            <h3>MG ZS</h3>
+            <p><a href="photo6.jpg" class="a-detail">詳細資料&raquo;</a></p>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <a class="a-about" href="about.html">MyPhotos</a>
+        <a class="a-about" href="service.html">服務條款</a>
+        <a class="a-about" href="privacy.html">隱私權政策</a>
+        <a class="a-back" href="./響應式網頁(平板)index_7.html"  target="_blank  ">平板顯示</a>
+        <a class="a-back" href="./響應式網頁(電腦)index_8.html"  target="_blank  ">電腦顯示</a>
+        <a class="a-back" href="#">Back to top</a>
+    </footer>
+</body>
+</html>

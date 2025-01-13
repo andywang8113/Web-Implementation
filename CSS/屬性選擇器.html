@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS屬性選擇器</title>
+    <style>
+        span[class]{
+            color:blue;
+        }
+        a[title]{
+            color:yellow;
+        }
+        a[href$=".pdf"]{
+            color:green;
+        }
+        a[href^="https"]{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+ <span class="class1">這是一個藍色段落</span>
+ <span class="class2">這是一個藍色段落</span>
+ <br>
+ <span>這個段落不是紫色</span>
+ <br>
+ <a href="https://www.lhu.edu.tw/>" title:lhu>這是一個黃色連結</a>
+ <a href="https://www.youtube.com/>" title:youtube>這是一個黃色連結</a>
+ <br>
+ <a href="file.pdf">這是一個綠色連結</a>
+ <br>
+ <span class="class1 class2">這是一個藍色段落</span>
+</body>
+</html> 

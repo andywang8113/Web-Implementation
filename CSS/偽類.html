@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS偽類</title>
+    <style>
+      a:link{
+        color:orange;
+      }
+      a:visited{
+        color: blue;
+      }
+      a:hover{
+        color:blueviolet;
+      }
+      a:active{
+        color:red;
+      }
+      li:hover{
+        background-color:green;
+      }
+      li:not(:hover){
+        color:aqua;
+      }
+    </style>
+</head>
+<body>
+   <a href="https://www.youtube.com/">youtube</a>
+   <a href="https://www.lhu.edu.tw/">lhu</a>
+   <a href="https://chatgpt.com/">chatgpt</a>
+   <a href="https://ani.gamer.com.tw/">巴哈姆特</a>
+   <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+   </ul>
+</body>
+</html> 
+
+
+a:link代表未點擊過的連結
+
+a:visited代表點擊過的連結
+
+a:hover代表滑鼠懸停
+
+a:active代表點下去的瞬間
+
+li:not(:hover)其他未停在上面的其他項目

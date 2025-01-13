@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+      }
+      body{
+        width:100%;
+        min-width: 600px;
+        max-width: 960px;
+        background-color: lightseagreen;
+        margin: 0 auto;
+      }
+      header, footer{
+        width:100%;
+        background-color: gray;
+      }
+      .cnt{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 150px 150px;
+        gap:20px 25px;
+      }
+      .item{
+        background-color: lightcoral;
+      }
+    </style>
+</head>
+<body>
+        <header><h1>頁首</h1></header>
+    <div class="cnt">
+        <div class="item">項目1</div>
+        <div class="item">項目2</div>
+        <div class="item">項目3</div>
+        <div class="item">項目4</div>
+        <div class="item">項目5</div>
+        <div class="item">項目6</div>
+        <div class="item">項目7</div>
+        <div class="item">項目8</div>
+        <div class="item">項目9</div>
+    </div>
+        <footer><h1>頁尾</h1></footer>
+</body>
+</html>

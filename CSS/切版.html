@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+        }
+        header, footer {
+            width: 100%;
+            background-color: gray;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            gap: 2%;
+            padding: 1em;
+        }
+        .section {
+            flex: 1;
+            height: 550px;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+        #one {
+            background-color: palevioletred;
+        }
+        #two {
+            background-color: seagreen;
+        }
+        #three {
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>頁首</h1></header>
+    <main>
+        <div id="one" class="section"><h1>區塊1</h1></div>
+        <div id="two" class="section"><h1>區塊2</h1></div>
+        <div id="three" class="section"><h1>區塊3</h1></div>
+    </main>
+    <footer><h1>頁尾</h1></footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS子選擇器</title>
+    <style>
+        #main-content > p {
+            color:aquamarine;  
+        }/*宣告孫節點前面要多個>div
+#main-content > div > p {
+color:aquamarine;
+}*/
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <p>我是子節點</p>
+    <div>
+        <p>我是孫節點</p>
+    </div>
+</div>
+</body>
+</html> 
